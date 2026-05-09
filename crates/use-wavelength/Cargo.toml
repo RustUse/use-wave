@@ -1,0 +1,10 @@
+[package]
+name = "use-wavelength"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+name = "use_wavelength"
+path = "src/lib.rs"
