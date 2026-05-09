@@ -193,8 +193,14 @@ mod tests {
 
     #[test]
     fn computes_phase_difference_in_radians() {
-        assert_close(phase_difference_radians(PI / 18.0, 35.0 * PI / 18.0).unwrap(), PI / 9.0);
-        assert_close(phase_difference_radians(35.0 * PI / 18.0, PI / 18.0).unwrap(), -PI / 9.0);
+        assert_close(
+            phase_difference_radians(PI / 18.0, 35.0 * PI / 18.0).unwrap(),
+            PI / 9.0,
+        );
+        assert_close(
+            phase_difference_radians(35.0 * PI / 18.0, PI / 18.0).unwrap(),
+            -PI / 9.0,
+        );
     }
 
     #[test]

@@ -101,7 +101,10 @@ mod tests {
 
     #[test]
     fn computes_frequency_from_speed_and_wavelength() {
-        assert_close(frequency_from_wavelength(343.0, 343.0 / 440.0).unwrap(), 440.0);
+        assert_close(
+            frequency_from_wavelength(343.0, 343.0 / 440.0).unwrap(),
+            440.0,
+        );
     }
 
     #[test]
