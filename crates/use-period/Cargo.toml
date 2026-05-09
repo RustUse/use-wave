@@ -1,0 +1,10 @@
+[package]
+name = "use-period"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+name = "use_period"
+path = "src/lib.rs"

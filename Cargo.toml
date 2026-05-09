@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "crates/use-frequency",
+    "crates/use-period",
+    "crates/use-wavelength",
+    "crates/use-wave-speed",
+    "crates/use-phase",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/RustUse/use-wave"
+version = "0.1.0"
