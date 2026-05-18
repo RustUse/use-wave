@@ -19,3 +19,13 @@ unsafe_code = "forbid"
 publish = false
 versioning = "lockstep-0.x"
 first-publish-candidates = ["use-wave"]
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+expect_used = "warn"
+multiple_crate_versions = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"

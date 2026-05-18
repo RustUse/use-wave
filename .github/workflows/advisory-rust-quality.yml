@@ -1,6 +1,6 @@
 name: Advisory Rust Quality
 
-on:
+"on":
     pull_request:
         branches:
             - main
@@ -50,7 +50,7 @@ jobs:
             - name: Compare public crate APIs against the PR base
               uses: obi1kenobi/cargo-semver-checks-action@v2
               with:
-                  manifest-path: crates/use-wave/Cargo.toml
+                  manifest-path: Cargo.toml
                   baseline-rev: ${{ github.event.pull_request.base.sha }}
                   feature-group: all-features
                   rust-toolchain: manual
